@@ -1,0 +1,62 @@
+// $headHeight:45px;
+// $buttonHeight:30px;
+// $buttonWidth:80px;
+// .lz-head{
+//     height: $headHeight;
+//     display: flex;
+//     border-bottom: 1px #ccc solid;
+//     .lz-head-left{
+//         display: inline-block;
+//         width: 33%;
+//         line-height: $headHeight;
+//     }
+//     .lz-head-middle{
+//         display: inline-block;
+//         width: 33%;
+//         line-height: $headHeight;
+//     }
+//     .lz-head-right{
+//         display: inline-block;
+//         width: 33%;
+//         line-height: $headHeight;
+//     }
+//     .lz-button {
+//         height: $buttonHeight;
+//         width: $buttonWidth;
+//         border: none;
+//         color: #fff;
+//         background-color:brown;
+//     }
+//     .lz-img{
+
+//     }
+ 
+// }
+.head{
+    text-align: center;
+    display: flex;
+}
+.logoBox{
+    // width: 100px;
+    height: 100%;
+    display: inline-block;
+    // flex: 1;
+    width: 35%;
+}
+.logoBoxImg{
+    // width: 100px;
+    height: 100%;
+    display: inline-block;
+    // flex: 1;
+    width: 30%;
+}
+.headImg{
+    width: 90%;
+    height: 2rem;
+}
+.logoText{
+    font-size: 1.3rem;
+    color: #ccc;
+    font-family:"Times New Roman",Georgia,Serif;
+    font-weight: bold;
+}

@@ -1,1 +1,112 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    font-size:62%; 
+    overflow-y: hidden;
+}
+body{
+    margin: 0px;
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 94%!important;
+    }
+}
+@media only screen and (min-width: 561px){
+    html {
+        font-size: 100%!important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 120%!important;
+    }
+}
+/*set start*/
+$headHeight:3rem;
+$buttonHeight:2.5rem;
+$buttonWidth:6rem;
+$img:3rem;
+/*set end*/  
+/*head start */
+.lz-head{
+    height: $headHeight;
+    display: flex;
+    border-bottom: 1px #ccc solid;
+    .lz-head-left{
+        display: inline-block;
+        line-height: $headHeight;
+        flex:1;
+    }
+    .lz-head-middle{
+        display: inline-block;
+        line-height: $headHeight;
+        flex:1;
+    }
+    .lz-head-right{
+        display: inline-block;
+        line-height: $headHeight;
+        flex:1;
+    }
+   
+}
+/*head end*/  
+
+
+/*component start*/ 
+    .lz-button {
+        height: $buttonHeight;
+        width: $buttonWidth;
+        border: none;
+        color: #fff;
+        background-color:brown;
+    }
+     .lz-img{
+        width: $img;
+        height: $img;
+        display: inline-block;
+        vertical-align:middle;
+    }
+/*component end*/ 
+
+/*section color start */ 
+.colorPlane{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ .box{
+   width: 25%;
+   text-align: center;
+   opacity: 0.9;
+   .card{
+       margin-top: 20px;
+       .cardTitle{
+           color: #fff;
+           font-family:Georgia,Serif;
+       }
+   }
+   .time{
+       font-size: 0.8rem;
+       font-family:Georgia,Serif;
+       text-align: left;
+       margin-left: 20px;
+   }
+ }
+ .bolg{
+     background-color: #e08031;
+ }
+ .bolg:hover{
+
+ }
+ .hot{
+     background-color: #c7ceb2
+ }
+ .essay{
+     background-color: #199475
+ }
+ .chat{
+     background-color:#0b6148
+ }
+}
+
+/*section color end */ 
