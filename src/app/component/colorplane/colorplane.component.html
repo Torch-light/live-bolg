@@ -1,27 +1,15 @@
 <main class="colorPlane">
   
-     <section class="box bolg">
+     <section class="box" *ngFor="let item of items"  [ngClass]=item.class>
        <article class="card">
-         <h1 class="time">{{time}}</h1>
-         <h2 class="cardTitle">博客</h2>
+         <h1 class="cardTitle">{{item.name}}</h1>
+        
        </article>
      </section>
-     <section  class="box hot">
-       <article class="card">
-         <h1 class="time">{{time}}</h1>
-         <h2 class="cardTitle">热门</h2>
-       </article>
-     </section>
-     <section  class="box essay">
-        <article class="card">
-          <h1 class="time">{{time}}</h1>
-         <h2 class="cardTitle">杂文</h2>
-       </article>
-     </section>
-     <section class="box chat">
-        <article class="card">
-          <h1 class="time">{{time}}</h1>
-         <h2 class="cardTitle">交流</h2>
-       </article>
-     </section>
+      
 </main>
+<footer class="footer">
+  <p class="footerText">我们读诗、写诗并不是因为它们好玩，而是因为我们是人类的一分子，而人类是充满激情的。没错，医学、法律、商业、工程，这些都是崇高的追求，足以支撑人的一生。但诗歌、美丽、浪漫、爱情，这些才是我们活着的意义。
+</p>
+  
+</footer>

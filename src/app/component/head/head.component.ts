@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./head.component.scss']
 })
 export class HeadComponent implements OnInit {
-
+  time: Date;
   constructor() { }
 
   ngOnInit() {
+    this.initTime();
   }
-
+  private initTime() {
+    this.time = new Date();
+  }
 }

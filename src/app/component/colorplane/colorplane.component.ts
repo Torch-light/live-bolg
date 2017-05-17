@@ -6,23 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./colorplane.component.scss']
 })
 export class ColorplaneComponent implements OnInit {
-  time:any;
+  items: Array<object>;
   constructor() {
-    this.initTime()
+    this.items = [{
+      name: '博客',
+      class: 'bolg',
+      text: '我步入丛林因为我希望生活得有意义 我希望活得深刻 吸取生命中所有的精华 把非生命的一切都击溃 以免当我生命终结 发现自己从没有活过'
+    }, {
+      name: '热门',
+      class: 'hot'
+    }, {
+      name: '杂文',
+      class: 'essay'
+    }, {
+      name: '交流',
+      class: 'chat'
+    }]
   }
 
   ngOnInit() {
 
   }
-  private initTime(){
-    var time=Math.random()*100000;
-    this.time=new Date().toLocaleString();
-    setInterval(function(){
-   
-    },1000)
-  }
 
-  private downTime(time:any){
-   
-  } 
 }
