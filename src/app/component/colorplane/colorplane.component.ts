@@ -7,25 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorplaneComponent implements OnInit {
   items: Array<object>;
+  anmite:object;
   constructor() {
     this.items = [{
       name: '博客',
       class: 'bolg',
-      text: '我步入丛林因为我希望生活得有意义 我希望活得深刻 吸取生命中所有的精华 把非生命的一切都击溃 以免当我生命终结 发现自己从没有活过'
+      introduce: '博客即是艺术',
+      details:'这是第2万篇博客'
+
     }, {
       name: '热门',
-      class: 'hot'
+      class: 'hot',
+      introduce:'这是介绍',
+      details:'这是详情'
     }, {
       name: '杂文',
-      class: 'essay'
+      class: 'essay',
+       introduce:'这是介绍',
+      details:'这是详情'
     }, {
       name: '交流',
-      class: 'chat'
-    }]
+      class: 'chat',
+       introduce:'这是介绍',
+      details:'这是详情'
+    }];
+    this.anmite={
+         class:''
+    }
   }
 
   ngOnInit() {
 
   }
 
+  private setClass(){
+     
+  }
 }
