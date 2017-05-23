@@ -8,6 +8,11 @@ html {
 body {
     margin: 0px;
 }
+@media only screen and (min-width: 380px) {
+    html {
+        font-size: 80%!important;
+    }
+}
 
 @media only screen and (min-width: 481px) {
     html {
@@ -26,6 +31,7 @@ body {
         font-size: 120%!important;
     }
 }
+
 
 
 /*set start*/
@@ -111,7 +117,7 @@ $img:3rem;
         bottom: 0px;
     }
     to {
-        bottom: 100px;
+        bottom: 150px;
     }
 }
 
@@ -119,17 +125,17 @@ $img:3rem;
     // z-index: 1000;
     position: absolute;
     width: 100%;
-    bottom: 100px;
+    bottom: 150px;
     color: #fff;
     // text-align: center;
-    animation: footMove 1.5s;
+    animation: footMove 1s;
     .footerText {
-        font-size: 2rem;
+        font-size: 1.1rem;
         width: 80%;
         margin: auto;
         font-family: "STKaiti";
         -webkit-animation-name: fadeInOut;
-        -webkit-animation-duration: 1s;
+        -webkit-animation-duration: 0.5s;
     }
 }
 

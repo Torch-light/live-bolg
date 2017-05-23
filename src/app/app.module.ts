@@ -9,13 +9,19 @@ import { HeadComponent } from './component/head/head.component';
 import { ColorplaneComponent } from './component/colorplane/colorplane.component';
 import { SlideDirective } from './directive/slide.directive';
 import { OnresizeDirective } from './directive/onresize.directive';
+import { HotComponent } from './page/hot/hot.component';
+import { ChatComponent } from './page/chat/chat.component';
+import { EssayComponent } from './page/essay/essay.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
     ColorplaneComponent,
     SlideDirective,
-    OnresizeDirective
+    OnresizeDirective,
+    HotComponent,
+    ChatComponent,
+    EssayComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Directive,ElementRef,HostListener } from '@angular/core';
+import { Directive,ElementRef,HostListener,Input } from '@angular/core';
 
 @Directive({
   selector: '[appOnresize]'
@@ -6,10 +6,11 @@ import { Directive,ElementRef,HostListener } from '@angular/core';
 export class OnresizeDirective {
 
   constructor(el:ElementRef) { 
-      console.log(el);
+    this.changeWindowWidth(el)
   }
-  @HostListener('onresize',['$event'])
-  onresize(e){
-    console.log(e);
+ 
+  
+  private changeWindowWidth(el:ElementRef){
+    console.log(window.innerWidth)
   }
 }
