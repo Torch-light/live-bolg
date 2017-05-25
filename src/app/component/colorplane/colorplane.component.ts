@@ -51,14 +51,15 @@ export class ColorplaneComponent implements OnInit {
   }
 
   private changeItem(){
-      let windowWidth=window.innerWidth;
-      if(windowWidth<500){
-        this.pageItem=this.items.slice(0,2);
-      }else if(windowWidth<800){
-        this.pageItem=this.items.slice(0,3);
-      }else{
-        this.pageItem=this.items;
-      }
+      // let windowWidth=window.innerWidth;
+      // if(windowWidth<500){
+      //      this.pageItem=this.items;
+      //   // this.pageItem=this.items.slice(0,2);
+      // }else if(windowWidth<800){
+      //   this.pageItem=this.items.slice(0,3);
+      // }else{
+      //   this.pageItem=this.items;
+      // }
     
   }
 }

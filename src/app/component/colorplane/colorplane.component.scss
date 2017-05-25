@@ -73,7 +73,8 @@
         background-color: rgba(25, 148, 117, 1.0)
     }
     .chat {
-        background-color: rgba(11, 97, 72, 1.0)
+        background-color: rgba(11, 97, 72, 1.0);
+        // height:555px;
     }
     .accordion {
         // opacity: 0.6;
@@ -92,7 +93,7 @@
             margin: 0xp;
             font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
             // font-size: 18px;
-                font-size: 1.2rem;
+                font-size: 1rem;
         }
     }
 }

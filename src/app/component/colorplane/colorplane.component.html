@@ -1,7 +1,7 @@
 <div >
-    <main class="colorPlane " [ngClass]=anmite.class appOnresize>
+    <main class="colorPlane " >
 
-        <section class="box" *ngFor="let item of pageItem">
+        <section class="box" *ngFor="let item of items" >
             <div class="accordion" [ngClass]=item.class appSlide>
                 <p class="cardTitle">{{item.name}}</p>
                 <!--<p class="introduce">{{item.introduce}}</p>-->
